@@ -16,13 +16,13 @@ body {
   height: 100vh;
   /* View Heigth - Altura do View Port (tela) */
 
-  background-color: #edb5bd;
+  background-color: #C3CFD9;
   /* border: solid red 2px; */
 
   box-sizing: border-box;
 
-  padding: 3px;
-  gap: 1px;
+  padding: 4px;
+  gap: 4px;
 
   /* Seja um grid container */
   display: grid;
@@ -39,30 +39,53 @@ body {
 }
 
 header {
-  background-color: #a3dfd9;
-  border: solid green 2px;
+  background-color: #DFE6ED;
 
   /* grid-column: 1/3; */
   grid-area: cabecalho;
 }
 
 main {
-  background-color: #a3dfd9;
-  border: solid green 2px;
+  background-color: #EDB5BD;
+  padding: 5px;
+  gap: 5px;
 
   grid-area: principal;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+main > * {
+  flex-grow: 1;
 }
 
 aside {
-  background-color: #a3dfd9;
-  border: solid green 2px;
+  background-color: #DFE6ED;
 
   grid-area: aolado;
 }
 
 footer {
-  background-color: #a3dfd9;
-  border: solid green 2px;
+  background-color: #DFE6ED;
 
   grid-area: rodape;
+}
+
+div {
+  background-color: #D5E7F7;
+  padding: 5px;
+  gap: 5px;
+
+  display: flex;
+}
+
+div > * {
+  flex-grow: 1;
+}
+
+article {
+  background-color: #A3DFD9;
+  padding: 5px;
 }
